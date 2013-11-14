@@ -1,0 +1,7 @@
+TVThing!
+
+- Læg i web tilgængelig mappe f.eks. http://localhost/tvthing
+- Gør settings.json skrivbar for php (chmod 664 settings.json)
+- Besøg http://<server>/path/index.php på dit tv
+- Besøg http://<server>/path/config.php på din computer
+- Klik på en radiostation!

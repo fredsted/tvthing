@@ -1,0 +1,73 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.top, .bottom {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100%;
+    border: 0;
+}
+
+.top {
+    top: 0;
+    height: 60px;
+}
+.bottom {
+    top: 60px;
+    bottom: 0px;
+
+}
+
+iframe {
+    position: absolute;
+    display: block;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.radioname {
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.lgr, .m3u, .off {
+    float: left;
+    padding: 1px;
+    margin: 5px;
+    width: 96px;
+    height: 62px;
+    border-radius: 4px;
+    border: 2px solid white;
+    opacity: 0.7;
+}
+
+.m3u, .off {
+    text-align: center;
+    line-height: 60px;
+}
+
+.off {
+    color: red;
+}
+
+.lgr:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+    border: 2px solid blue;
+}
