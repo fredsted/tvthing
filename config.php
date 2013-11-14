@@ -7,11 +7,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Foundation 4</title>
+    <title>TVThing Config</title>
 
 
     <link rel="stylesheet" href="css/foundation.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/danmark.js"></script>
     <script src="js/vendor/custom.modernizr.js"></script>
@@ -21,7 +21,6 @@
             ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
             '.js><\/script>')
     </script>
-
 </head>
 <body>
 
@@ -39,7 +38,6 @@
         <div style="width: 100%;">
             <div class="lgr off" id="off"><a href="#" title="radio off">off<img class="lg" src="img/channels/blank.gif"
                                                                              alt="The Voice"></a></div>
-           <!-- <div class="m3u">M3U</div>-->
             <div class="lgr" id="thevoice"><a href="#" title="The Voice"><img class="lg" src="img/channels/thevoice.gif"
                                                                               alt="The Voice"></a></div>
             <div class="lgr" id="anr"><a href="#" title="ANR - radio med puls"><img class="lg"
