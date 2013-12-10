@@ -21,6 +21,8 @@
             ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
             '.js><\/script>')
     </script>
+	
+	<script src="js/tvthing.js"></script>
 </head>
 <body>
 
