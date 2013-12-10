@@ -14,10 +14,10 @@ body {
 
 .top {
     top: 0;
-    height: 60px;
+    height: 29px;
 }
 .bottom {
-    top: 60px;
+    top: 29px;
     bottom: 0px;
 
 }
@@ -40,7 +40,9 @@ iframe {
 
 .radioname {
     font-weight: 900;
-    font-size: 45px;
+    font-size: 20px;
+	text-align: center;
+	width:100%;
 }
 
 .lgr, .m3u, .off {

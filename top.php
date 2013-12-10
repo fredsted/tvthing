@@ -30,7 +30,7 @@
     </script>
 </head>
 <body>
-    <img src="img/channels/drp3.gif" class="fl radioimg" />
+    <!--<img src="img/channels/drp3.gif" class="fl radioimg" />-->
     <span class="fl radioname">&nbsp; loading...</span>
     <iframe class="radioframe" src="about:blank" style="width: 1px; height: 1px;"></iframe>
 </body>
