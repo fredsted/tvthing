@@ -7,9 +7,15 @@
 </head>
 <script src="js/vendor/jquery.js"></script>
 <script>
+	var first = true;
+	var oldUrl = '';
     function checksettings() {
         $.getJSON("settings.json", function(data) {
-            $("#frame-bottom").attr("src", data.bottomurl);
+			if (data.updatefreq == "true" || first == true || oldUrl != data.bottomurl) {
+            	$("#frame-bottom").attr("src", data.bottomurl);
+			}
+			first = false;
+			oldUrl = data.bottomurl;
         });
         setTimeout(checksettings, 30 * 1000);
     }

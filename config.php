@@ -181,6 +181,12 @@
             <div class="small-12 columns">
                 <input type="text" placeholder="" id="bottomurl">
             </div>
+			
+            <label>Opdater automatisk</label>
+
+            <div class="small-12 columns">
+                <input type="checkbox" id="updatefreq">
+            </div>
         </div>
 
         <button id="save">Gem</button>

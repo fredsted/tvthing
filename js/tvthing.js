@@ -3,6 +3,8 @@ $(function () {
     (function () {
         $.getJSON("settings.json", function (data) {
             $("#bottomurl").val(data.bottomurl);
+			if (data.updatefreq == "true")
+				$("#updatefreq").attr("checked", "checked");
 
             if (data.channel == 0) {
                 $(".m3u").addClass("active");
@@ -29,6 +31,7 @@ $(function () {
         event.preventDefault();
         save_settings({
             "bottomurl": $("#bottomurl").val(),
+			"updatefreq": $("#updatefreq").prop('checked').toString(),
         });
     });
 	
