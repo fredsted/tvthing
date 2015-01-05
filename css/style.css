@@ -56,6 +56,16 @@ iframe {
     opacity: 0.7;
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+
+	.lgr, .m3u, .off {
+		width: 85px;
+	}
+ }
+
 .m3u, .off {
     text-align: center;
     line-height: 60px;
