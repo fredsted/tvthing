@@ -50,10 +50,17 @@ iframe {
     padding: 1px;
     margin: 5px;
     width: 96px;
-    height: 62px;
+    height: 70px;
     border-radius: 4px;
     border: 2px solid white;
     opacity: 0.7;
+	overflow: hidden;
+}
+
+.lgr img {
+	border-radius: 4px;
+	width: 96px;
+	height: 62px;
 }
 
 @media only screen 
