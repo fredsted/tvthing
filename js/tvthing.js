@@ -36,15 +36,23 @@ $(function () {
     });
 	
 	// Change channel
-    $(".lgr").click(function () {
+    $("#channels").on('click', '.lgr', function () {
         event.preventDefault();
         $(".active").removeClass("active");
         $(this).addClass("active");
         save_settings({
             "channel": $(this).attr("id"),
-            "m3uurl": radios[$(this).attr("id")],
+            "m3uurl": $(this).data("url"),
             "m3utitle": $(this).children("a").attr("title"),
             "m3uimg": $(this).children().find("img").attr("src")
         });
     });
+	
+	if ($("#channels").length) {
+		$.getJSON("js/danmark.js", function(data) {
+			$.each(data, function(radio, url) {				
+				$("#channels").append('<div class="lgr" id="'+radio+'" data-url="'+url+'"><a href="#" title="'+radio+'"><img class="lg" src="img/channels/'+radio+'.gif" alt="'+radio+'"></a></div>');
+			})
+		});
+	}
 });
