@@ -1,19 +1,4 @@
 $(function () {
-	// Load settings
-    (function () {
-        $.getJSON("settings.json", function (data) {
-            $("#bottomurl").val(data.bottomurl);
-			if (data.updatefreq == "true")
-				$("#updatefreq").attr("checked", "checked");
-
-            if (data.channel == 0) {
-                $(".m3u").addClass("active");
-            } else {
-                $(".active").removeClass("active");
-                $(".lgr#" + data.channel).addClass("active");
-            }
-        });
-    })();
 
     var save_settings = function (settings) {
         $.ajax({
@@ -52,7 +37,20 @@ $(function () {
 		$.getJSON("js/danmark.js", function(data) {
 			$.each(data, function(radio, url) {				
 				$("#channels").append('<div class="lgr" id="'+radio+'" data-url="'+url+'"><a href="#" title="'+radio+'"><img class="lg" src="img/channels/'+radio+'.gif" alt="'+radio+'"></a></div>');
-			})
+			});
+			
+	        $.getJSON("settings.json", function (data) {
+	            $("#bottomurl").val(data.bottomurl);
+				if (data.updatefreq == "true")
+					$("#updatefreq").attr("checked", "checked");
+
+	            if (data.channel == 0) {
+	                $(".m3u").addClass("active");
+	            } else {
+	                $(".active").removeClass("active");
+	                $(".lgr#" + data.channel).addClass("active");
+	            }
+	        });
 		});
 	}
 });
