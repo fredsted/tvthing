@@ -31,7 +31,7 @@
 </head>
 <body>
     <!--<img src="img/channels/drp3.gif" class="fl radioimg" />-->
-    <span class="fl radioname">&nbsp; loading...</span>
+    <span class="fl radioname">&nbsp; loading...</span> <a id="configlink" href="config.php" target="_top">config</a>
     <iframe class="radioframe" src="about:blank" style="width: 1px; height: 1px;"></iframe>
 </body>
 </html>

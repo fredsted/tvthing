@@ -71,5 +71,14 @@ iframe {
 
 .active {
     opacity: 1;
-    border: 2px solid blue;
+    border: 3px solid #2695BF;
+}
+
+a#configlink {
+	position: absolute;
+	z-index: 2;
+	right: 5px;
+	top: 7px;
+	font-size: 11px;
+	text-decoration: none;
 }
