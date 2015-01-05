@@ -47,8 +47,7 @@
 <div class="row">
     <div class="large-8 columns">
         <div style="width: 100%;">
-            <div class="lgr off" id="off"><a href="#" title="radio off">off<img class="lg" src="img/channels/blank.gif"
-                                                                             alt="The Voice"></a></div>
+            <div class="lgr off" id="off"><a href="#" title="radio off"><img class="lg" src="img/channels/blank.gif" alt="Turn Off Radio"></a></div>
             <div class="lgr" id="thevoice"><a href="#" title="The Voice"><img class="lg" src="img/channels/thevoice.gif"
                                                                               alt="The Voice"></a></div>
             <div class="lgr" id="anr"><a href="#" title="ANR - radio med puls"><img class="lg"
@@ -185,20 +184,19 @@
         <h4>Indstillinger</h4>
 		
         <div class="row collapse">
-            <label>Bottom frame URL</label>
+            <label>Bottom frame URL
 
-            <div class="small-12 columns">
                 <input type="text" placeholder="" id="bottomurl">
-            </div>
-			
-            <label>Opdater automatisk</label>
+			</label>
+          
 
-            <div class="small-12 columns">
-                <input type="checkbox" id="updatefreq">
+            	 <label>
+				  	<input type="checkbox" id="updatefreq"> Opdater automatisk
             </div>
+        
+
+        <button id="save" class="small button">Gem</button>
         </div>
-
-        <button id="save">Gem</button>
     </div>
 </div>
 
