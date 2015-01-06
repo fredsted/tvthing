@@ -32,5 +32,6 @@
    "skala":"http://skala.radiostreaming.dk:8050/",
    "specifik":"http://specific.dk/normal.wvx",
    "thevoice":"http://195.184.101.203/voice128",
-   "classicrock109":"http://174.36.51.212:10042/listen.pls"
+   "classicrock109":"http://174.36.51.212:10042/listen.pls",
+   "radio24syv":"http://rrr.sz.xlcdn.com/?account=Radio24syv&file=ENC1_Android64&type=live&service=icecast&protocol=http&port=8000&output=pls"
 }
