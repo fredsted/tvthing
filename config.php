@@ -37,7 +37,7 @@
 <div class="row">
     <div class="large-12 columns">
         <h2>TVThing Config
-            <small>version 1.1.2</small>
+            <small>version 1.1.3</small>
         </h2>
         <hr/>
     </div>
